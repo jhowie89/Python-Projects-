@@ -3,6 +3,12 @@
 #Create evaluate guess method that gives the rules of the PNZ method
 #display rule results
 """
+In the game of PNZ, one player thinks of a number consisting of three distinct digits. The other player repeatedly guesses the number and receives the following evaluation of the guess from the opponent:
+• PPP means that each digit is in the correct position-the player has guessed the number.
+Each P means that a digit is in the correct position, without saying which position that is.
+Each N means that a digit occurs in the number, but it's not in the correct position.
+A single Z means no digits are in the number.
+
 Guess	Evaluation	Explanation
 123	PPP	All digits correct and in the correct positions.
 132	PNN	1 is in the correct position (P); 2 and 3 are correct digits but wrong positions (N).
