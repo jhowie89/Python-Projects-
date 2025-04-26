@@ -2,6 +2,16 @@
 #create a random number generator for a string of 3 numbers to be in an array
 #Create evaluate guess method that gives the rules of the PNZ method
 #display rule results
+"""
+Guess	Evaluation	Explanation
+123	PPP	All digits correct and in the correct positions.
+132	PNN	1 is in the correct position (P); 2 and 3 are correct digits but wrong positions (N).
+145	PNZ	1 is correct and in the correct position (P); 2 is present but wrong position (N); 5 is not in the number (Z).
+312	NNP	3 and 1 are in the number but wrong positions (N); 2 is in the correct position (P).
+789	Z	None of the digits (7, 8, 9) are in 123.
+124	PPZ	1 and 2 are correct and in the correct positions (PP); 4 is not in the number (Z).
+231	NNP	2 and 3 are in the number but wrong positions (N); 1 is in the correct position (P).
+"""
 import random
 print('Welcome to PNZ game')
 
